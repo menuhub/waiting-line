@@ -8,13 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form
-      name="waiting-line"
-      method="POST"
-      data-netlify="true"
-      action="/"
-      enctype="multipart/form-data"
-    >
+    <form name="beta" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="beta" />
       <p>
         <label>
           Email: <input type="email" name="email" />
@@ -22,14 +17,18 @@ const IndexPage = () => (
       </p>
       <p>
         <label htmlFor="launch_notification">
-          <input type="checkbox" name="launch_notification" />
+          <input
+            type="checkbox"
+            name="launch_notification"
+            id="launch_notification"
+          />
           Notify me when the site launches
         </label>
       </p>
       <p>
         <label htmlFor="beta_access">
-          <input type="checkbox" name="beta_access" />I want to be part of the
-          Beta team and have early-access to the preview
+          <input type="checkbox" name="beta_access" id="beta_access" />I want to
+          be part of the Beta team and have early-access to the preview
         </label>
       </p>
       <p>
