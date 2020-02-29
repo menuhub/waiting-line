@@ -12,7 +12,7 @@ const IndexPage = () => (
       name="waiting-line"
       method="POST"
       data-netlify="true"
-      action="/waiting-line"
+      action="/"
       enctype="multipart/form-data"
     >
       <p>
