@@ -7,35 +7,23 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <form
-      name="beta"
+      name="contact"
       method="POST"
-      data-netlify="true"
       data-netlify-recaptcha="true"
+      data-netlify="true"
     >
-      <input type="hidden" name="form-name" value="beta" />
       <p>
         <label>
-          Email: <input type="email" name="email" />
+          Email: <input type="text" name="name" />
         </label>
       </p>
       <p>
-        <label htmlFor="launch_notification">
-          <input
-            type="checkbox"
-            name="launch_notification"
-            id="launch_notification"
-          />
-          Notify me when the site launches
+        <label>
+          Message: <textarea name="message"></textarea>
         </label>
       </p>
-      <p>
-        <label htmlFor="beta_access">
-          <input type="checkbox" name="beta_access" id="beta_access" />I want to
-          be part of the Beta team and have early-access to the preview
-        </label>
-      </p>
+      <div data-netlify-recaptcha="true"></div>
       <p>
         <button type="submit">Send</button>
       </p>
