@@ -7,19 +7,23 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
+    <form name="beta" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="beta" />
       <p>
         <label>
           Email: <input type="text" name="name" />
         </label>
       </p>
       <p>
-        <label>
-          Message: <textarea name="message"></textarea>
+        <input type="checkbox" id="notification" name="notify" />
+        <label htmlFor="notification">Notify me when site launches.</label>
+      </p>
+      <p>
+        <input type="checkbox" id="earlyAccess" name="invite" />
+        <label htmlFor="earlyAccess">
+          I want to have early access to the preview.
         </label>
       </p>
-      <div data-netlify-recaptcha="true"></div>
       <p>
         <button type="submit">Send</button>
       </p>
