@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="waiting-line" method="POST" data-netlify="true">
       <p>
         <label>
           Email: <input type="email" name="email" />
