@@ -8,13 +8,28 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>
+          Email: <input type="email" name="email" />
+        </label>
+      </p>
+      <p>
+        <label htmlFor="launch_notification">
+          <input type="checkbox" id="launch_notification" />
+          Notify me when the site launches
+        </label>
+      </p>
+      <p>
+        <label htmlFor="beta_access">
+          <input type="checkbox" id="beta_access" />I want to be part of the
+          Beta team and have early-access to the preview
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </Layout>
 )
 
