@@ -13,6 +13,8 @@ const IndexPage = () => (
       data-netlify-recaptcha="true"
       data-netlify="true"
     >
+      {/* You still need to add the hidden input with the form name to your JSX form */}
+      <input type="hidden" name="form-name" value="contact" />
       <p>
         <label>
           Email: <input type="text" name="name" />
