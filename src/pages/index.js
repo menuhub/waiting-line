@@ -7,7 +7,7 @@ const IndexPage = ({ data }) => {
   const { title, description } = data.site.siteMetadata
   return (
     <Layout>
-      <div style={{ display: "flex" }}>
+      <div>
         <div>
           <WelcomeMessage title={title} description={description} />
         </div>
