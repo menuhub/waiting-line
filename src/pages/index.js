@@ -8,7 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form name="beta" method="POST" data-netlify="true">
+    <form
+      name="beta"
+      method="POST"
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+    >
       <input type="hidden" name="form-name" value="beta" />
       <p>
         <label>
