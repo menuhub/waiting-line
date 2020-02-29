@@ -16,13 +16,13 @@ const IndexPage = () => (
       </p>
       <p>
         <label htmlFor="launch_notification">
-          <input type="checkbox" id="launch_notification" />
+          <input type="checkbox" name="launch_notification" />
           Notify me when the site launches
         </label>
       </p>
       <p>
         <label htmlFor="beta_access">
-          <input type="checkbox" id="beta_access" />I want to be part of the
+          <input type="checkbox" name="beta_access" />I want to be part of the
           Beta team and have early-access to the preview
         </label>
       </p>
